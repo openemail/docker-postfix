@@ -1,5 +1,5 @@
 FROM debian:buster-slim
-LABEL maintainer "Andre Peters <andre.peters@servercow.de>"
+LABEL maintainer "Amila Kothalawala <amila@openemail.io>"
 
 ARG DEBIAN_FRONTEND=noninteractive
 ENV LC_ALL C
@@ -17,6 +17,7 @@ RUN groupadd -g 102 postfix \
 	ca-certificates \
 	curl \
 	dirmngr \
+  dnsutils \
 	gnupg \
 	libsasl2-modules \
   mariadb-client \
